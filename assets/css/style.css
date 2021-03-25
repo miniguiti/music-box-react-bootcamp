@@ -124,7 +124,7 @@ nav {
 
 .img-music {
     background-color: var(--light-color-2);
-    background-image: url(https://urbanarts.vteximg.com.br/arquivos/ids/6753735/045308_Ampliada.jpg?v=637284737905970000);
+    background-image: url(../images/capa.png);
     background-size: cover;
     height: 290px;
 }
