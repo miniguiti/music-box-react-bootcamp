@@ -1,0 +1,190 @@
+:root {
+    --btn-green: #27AE60;
+    --light-color: #f2f2f2;
+    --light-color-2: #8f8f8f;
+    --dark-color: #333333;
+    --font-defaut: sans-serif;
+    --font-dark-color: #383838;
+    --purple: #5662B7;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    /* background-color: tomato; */
+}
+
+.btn-green {
+    color: var(--light-color);
+    background-color: var(--btn-green);
+    height: 40px;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 0 10px 0 10px;
+}
+
+.right{
+    float: right;
+}
+.body{
+    color: #383838;
+}
+/* Navbar */
+nav {
+    height: 70px;
+    width: 100%;
+    background-color:var(--dark-color);
+}
+
+.avatar{
+    float: right;
+}
+
+.logo, .avatar{
+    margin-top: 15px;
+}
+/* Index */
+.index {
+    margin-top: 5%;
+}
+
+.index-content {
+    display: flex;
+}
+
+.info-index h1 {
+    font-size: calc(4em + 1vw);
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: var(--font-defaut);
+    color: var(--font-dark-color);
+}
+
+.info-index h3 {
+    font-size: 30px;
+    font-weight: lighter;
+    margin-bottom: 20px;
+    font-family: var(--font-defaut);
+    color: var(--purple);
+}
+
+.not-found h3{
+    font-size: 60px;
+}
+
+.box-text-index {
+    width: 50%;
+}
+
+.index-img {
+    width: 50%;
+    margin: auto;
+}
+
+
+/* Music page */
+.filter{
+    /* background-color: red; */
+    margin-top: 40px;
+    display: inline-block;
+    width: 100%;
+}
+.music-boxes {
+    /* background-color: red; */
+    text-align: center;
+    padding-top: 30px;
+}
+
+.music-box {
+    width: 290px;
+    margin: 5px;
+    font-family: sans-serif;
+    display: inline-block;
+}
+
+.icons .stars {
+    float: right;
+}
+
+.music-box label {
+    font-weight: bold;
+    color: var(--light-color);
+    font-size: 17px;
+}
+
+.music-box input {
+    border: none;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    font-size: 17px;
+    width: inherit;
+}
+
+.img-music {
+    background-color: var(--light-color-2);
+    background-image: url(https://urbanarts.vteximg.com.br/arquivos/ids/6753735/045308_Ampliada.jpg?v=637284737905970000);
+    background-size: cover;
+    height: 290px;
+}
+
+.music-data {
+    background-color: var(--dark-color);
+}
+
+.name,
+.genre,
+.release,
+.icons {
+    padding: 10px;
+    text-align: left;
+}
+
+.name label {
+    width: 200px;
+}
+
+.genre label {
+    width: 195px;
+}
+
+.release label {
+    width: 100px;
+}
+
+/* ADICIONAR MÚSICA */
+form{
+    width: 45%;
+    font-family: var(--font-defaut);
+    color: var(--font-dark-color);
+}
+form div{
+    margin-left: 3.5%;
+}
+form input{
+    text-align: center;
+    width: 90%;
+    height: 40px;
+    border: solid --font-dark-color 1px;
+    margin-bottom: 25px;
+}
+form label{
+    font-family: var(--font-defaut);
+}
+form h1{
+    margin-top: 40px;
+    font-family: var(--font-defaut);
+    text-align: center;
+    font-size: 40px;
+}
+
+/* ADICIONAR MUSICA */
+.add-music{
+    display: flex;
+    margin-top: 70px;
+}
+
+.add-music img{
+    width: 55%;
+}
