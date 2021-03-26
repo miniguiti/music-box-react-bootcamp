@@ -37,4 +37,4 @@ npm start
 ## Desenvolvedores
 - @miniguiti
 - @fernandacaramico
-- GBernardo10
+- @GBernardo10
