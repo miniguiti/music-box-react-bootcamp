@@ -31,7 +31,7 @@ npm start
 #
 ## Arquitetura do projeto **(Versão 1.0.0)**
 
-![fluxo](https://user-images.githubusercontent.com/37668247/112648650-7c4a1d00-8e28-11eb-9ffe-8903e3f3d852.png)
+![fluxo-v2](https://user-images.githubusercontent.com/37668247/113367826-7629d400-9333-11eb-80bf-0c7b7302aed3.png)
 #
 
 ## Desenvolvedores
