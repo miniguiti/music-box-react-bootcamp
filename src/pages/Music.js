@@ -9,7 +9,7 @@ function Music() {
             <NavBar/>
             <div className="container">
                 <div className="filter">
-                    <BtnGreen texto="Adicionar"/>
+                    <BtnGreen texto="Adicionar" destino="/add-music"/>
                 </div>
             </div>
             <div className="container">
