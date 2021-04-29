@@ -29,9 +29,10 @@ npm install
 npm start
 ```
 #
-## Arquitetura do projeto **(Versão 1.0.0)**
+## Arquitetura do projeto **(Versão 3.0.0)**
 
-![fluxo-v2](https://user-images.githubusercontent.com/37668247/113367826-7629d400-9333-11eb-80bf-0c7b7302aed3.png)
+![fluxo-v3](https://user-images.githubusercontent.com/37668247/116615240-63de8e00-a911-11eb-9f68-cdc34b358f2a.png)
+
 #
 
 ## Desenvolvedores
