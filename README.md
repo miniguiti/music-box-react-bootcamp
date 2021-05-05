@@ -38,4 +38,4 @@ npm start
 ## Desenvolvedores
 - @miniguiti
 - @fernandacaramico
-- @GBernardo10
+- @gesuvs
