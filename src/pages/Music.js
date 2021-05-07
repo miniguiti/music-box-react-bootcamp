@@ -1,9 +1,24 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import api from '../api';
 import BtnGreen from '../components/BtnGreen'
 import MusicItem from '../components/MusicItem'
 import NavBar from '../components/NavBar'
 
 function Music() {
+
+    //guardar as musicas
+    const [musicas, setMusicas] = useState([]);
+
+    //buscar as musicar
+    useEffect(() =>{
+        async function buscarMusicas(){
+            const resposta = await api.get("");
+            setMusicas(resposta.data);
+            console.log("OLHA O QUE VEIO DA API!!", resposta.data)
+        }
+        buscarMusicas();
+    }, []);
+
     return (
         <>
             <NavBar/>
@@ -14,14 +29,14 @@ function Music() {
             </div>
             <div className="container">
                 <div className="music-boxes">
-                    <MusicItem nome="Numb linking park" genero="rock" ano="2003"/>
-                    <MusicItem nome="HIGHEST IN THE ROOM" genero="pop" ano="2001"/>
-                    <MusicItem nome="Lisboa - Anavitória" genero="MBP" ano="2019"/>
-                    <MusicItem nome="faroeste caboclo" genero="MBB/ROCK" ano="2001"/>
-                    <MusicItem nome="Nome 1" genero="Pagode" ano="2000"/>
-                    <MusicItem nome="Nome 2" genero="Rock" ano="2000"/>
-                    <MusicItem nome="Nome 3" genero="Samba" ano="2070"/>
-                    <MusicItem nome="Nome 4" genero="Funk" ano="2021"/>
+                    {musicas.map((musica) => (
+                        <MusicItem
+                            key={musica.id}
+                            nome={musica.nome}
+                            genero={musica.genero}
+                            ano={musica.ano}
+                        />
+                    ))}
                 </div>
             </div>
         </>
