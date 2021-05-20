@@ -31,7 +31,7 @@ npm start
 #
 ## Arquitetura do projeto **(Versão 3.0.0)**
 
-![fluxo-v3](https://user-images.githubusercontent.com/37668247/116615240-63de8e00-a911-11eb-9f68-cdc34b358f2a.png)
+![fluxo](https://user-images.githubusercontent.com/37668247/119056890-d76c3c00-b9a1-11eb-894d-7f9e0453baf8.png)
 
 #
 
