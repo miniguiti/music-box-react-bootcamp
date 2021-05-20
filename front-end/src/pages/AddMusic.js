@@ -32,6 +32,7 @@ function AddMusic(props) {
             url: musicData.url
         }).then(resposta => {
             console.log("OLHA A RESPOSTA!", resposta.data)
+            alert("Inseriu uma música!");
         });
     }  
 
