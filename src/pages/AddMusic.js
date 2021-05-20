@@ -3,8 +3,9 @@ import NavBar from '../components/NavBar';
 import imgAdd from '../assets/images/add-music-img.png';
 import BtnGreen from '../components/BtnGreen';
 import axios from 'axios';
+import api from '../api';
 
-function AddMusic() {
+function AddMusic(props) {
     //Guarda a música que queremos salvar
     const [musicData, setMusicData] = useState({
         nome: "",
@@ -24,7 +25,7 @@ function AddMusic() {
     //Enviar chamando a requisição HTTP POST
     function enviar(e){
         e.preventDefault(); //para não atualizar a tela quando for chamada a função
-        axios.post("https://6086fb95a3b9c200173b75bb.mockapi.io/music", {
+        api.post(`/`, {
             nome: musicData.nome,
             genero: musicData.genero,
             ano: musicData.ano,

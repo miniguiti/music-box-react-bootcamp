@@ -9,7 +9,7 @@ function Music() {
     //guardar as musicas
     const [musicas, setMusicas] = useState([]);
 
-    //buscar as musicar
+    //buscar as musica
     useEffect(() =>{
         async function buscarMusicas(){
             const resposta = await api.get("");
@@ -31,10 +31,11 @@ function Music() {
                 <div className="music-boxes">
                     {musicas.map((musica) => (
                         <MusicItem
-                            key={musica.id}
+                            id={musica.id}
                             nome={musica.nome}
                             genero={musica.genero}
                             ano={musica.ano}
+                            imgFundo={musica.url}
                         />
                     ))}
                 </div>
