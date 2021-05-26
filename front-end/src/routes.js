@@ -10,15 +10,17 @@ import Index from './pages/Index'
 import Music from './pages/Music'
 import AddMusic from './pages/AddMusic'
 import NotFound from './pages/NotFound'
+import EditMusic from './pages/EditMusic' //<-----
 
 function Routes(){
     return(
         <Router>
             <Switch>
                 <Route exact path="/" component={Index}/>
-                <Route path="/music" component={Music}/>
-                <Route path="/add-music" component={AddMusic}/>
-                <Route path="*" component={NotFound}/>
+                <Route exact path="/music" component={Music}/>
+                <Route exact path="/add-music" component={AddMusic}/>
+                <Route exact path={`/edit/:id`} component={EditMusic}/>
+                <Route exact path="*" component={NotFound}/>
             </Switch>
         </Router>
     );
